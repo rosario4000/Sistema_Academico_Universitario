@@ -57,7 +57,7 @@ namespace SistemaAcademico
     public abstract class Avaliacao : IAvaliavel
     {
         public string Nome { get; }
-        public double Nota { get; protected set; } // 0..20
+        public double Nota { get; protected set; } 
 
         protected Avaliacao(string nome, double nota)
         {
@@ -132,7 +132,7 @@ namespace SistemaAcademico
         private readonly List<Estudante> _inscritos = new();
         public IReadOnlyList<Estudante> Inscritos => _inscritos.AsReadOnly();
 
-        // Nota: Esta lista é global; mantive para compatibilidade com o teu código original.
+        
         private readonly List<Avaliacao> _avaliacoes = new();
         public IReadOnlyList<Avaliacao> Avaliacoes => _avaliacoes.AsReadOnly();
 
